@@ -21,11 +21,12 @@ MDXQ/
 │   ├── test.csv
 │   └── データ説明.txt
 ├── notebooks/                     # Jupyter Notebook
-│   ├── 20250909_enshu3_Challenge.ipynb
+│   ├── 20250909_enshu3_Challenge_rf100.ipynb
+│   ├── 20250909_enshu3_Challenge_template.ipynb
 │   ├── score_analysis.py          # スコア記録・分析ライブラリ
 │   └── theme1_sample_code.ipynb
 ├── submissions/                   # 提出ファイル
-│   └── my_submission_rf_20250909-122900.csv
+│   └── 20250909_enshu3_Challenge_rf100_20250909-122900.csv
 ├── .gitignore
 └── README.md
 ```
@@ -44,7 +45,30 @@ cd notebooks
 jupyter notebook
 ```
 
-### 2. スコア記録・分析
+### 2. 新しい改善を試す際の手順
+
+```bash
+# 1. テンプレートから新しいNotebookを作成
+cp 20250909_enshu3_Challenge_template.ipynb 20250909_enshu3_Challenge_[改善内容].ipynb
+
+# 例:
+cp 20250909_enshu3_Challenge_template.ipynb 20250909_enshu3_Challenge_rf200.ipynb
+cp 20250909_enshu3_Challenge_template.ipynb 20250909_enshu3_Challenge_xgb.ipynb
+cp 20250909_enshu3_Challenge_template.ipynb 20250909_enshu3_Challenge_features.ipynb
+
+# 2. Notebookを編集
+# - improvement_name を適切な値に変更
+# - モデルや特徴量を調整
+
+# 3. 実行して提出ファイルを生成
+
+# 4. 結果をコミット
+git add notebooks/20250909_enshu3_Challenge_[改善内容].ipynb
+git add submissions/20250909_enshu3_Challenge_[改善内容]_*.csv
+git commit -m "改善: [改善内容] - スコア: [スコア値]"
+```
+
+### 3. スコア記録・分析
 
 ```python
 from score_analysis import record_score, compare_scores
@@ -60,10 +84,9 @@ result = record_score(
 
 ## 改善履歴
 
-| モデル | スコア | 改善率 | 施策 |
-|--------|--------|--------|------|
-| 線形回帰（ベースライン） | 3.9937572546850784 | - | - |
-| RandomForestRegressor | [提出後記録] | [計算中] | 線形回帰からRandomForestに変更 |
+| ファイル名 | モデル | スコア | 改善率 | 施策 |
+|------------|--------|--------|--------|------|
+| 20250909_enshu3_Challenge_rf100.ipynb | RandomForestRegressor (100) | [提出後記録] | [計算中] | 線形回帰からRandomForestに変更 |
 
 ## 今後の改善案
 
