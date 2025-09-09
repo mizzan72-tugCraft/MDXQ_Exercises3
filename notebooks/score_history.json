@@ -1,0 +1,50 @@
+[
+    {
+        "timestamp": "20250909-135713",
+        "current_score": 3.078811806610283,
+        "model_name": "RandomForestRegressor (n_estimators=200)",
+        "features_used": "店舗ID, 商品ID, 年, 月, 商品カテゴリID",
+        "notes": "n_estimatorsを100から200に増加",
+        "previous_score": 3.9937572546850784,
+        "improvement": 0.9149454480747954,
+        "improvement_rate": 22.909390574539113,
+        "baseline_improvement": 0.9149454480747954,
+        "baseline_improvement_rate": 22.909390574539113
+    },
+    {
+        "timestamp": "20250909-135725",
+        "current_score": 3.078811806610283,
+        "model_name": "RandomForestRegressor (n_estimators=200)",
+        "features_used": "店舗ID, 商品ID, 年, 月, 商品カテゴリID",
+        "notes": "n_estimatorsを100から200に増加",
+        "previous_score": 3.078811806610283,
+        "improvement": 0.0,
+        "improvement_rate": 0.0,
+        "baseline_improvement": 0.9149454480747954,
+        "baseline_improvement_rate": 22.909390574539113
+    },
+    {
+        "timestamp": "20250909-140055",
+        "current_score": 3.07256739424164,
+        "model_name": "RandomForestRegressor (n_estimators=100)",
+        "features_used": "店舗ID, 商品ID, 年, 月, 商品カテゴリID",
+        "notes": "線形回帰からRandomForestに変更",
+        "previous_score": 3.078811806610283,
+        "improvement": 0.0062444123686429265,
+        "improvement_rate": 0.20281890420310922,
+        "baseline_improvement": 0.9211898604434383,
+        "baseline_improvement_rate": 23.065744903819333
+    },
+    {
+        "timestamp": "20250909-140110",
+        "current_score": 3.078811806610283,
+        "model_name": "RandomForestRegressor (n_estimators=200)",
+        "features_used": "店舗ID, 商品ID, 年, 月, 商品カテゴリID",
+        "notes": "n_estimatorsを100から200に増加",
+        "previous_score": 3.07256739424164,
+        "improvement": -0.0062444123686429265,
+        "improvement_rate": -0.2032310952835633,
+        "baseline_improvement": 0.9149454480747954,
+        "baseline_improvement_rate": 22.909390574539113
+    }
+]
