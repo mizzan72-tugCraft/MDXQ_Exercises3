@@ -21,15 +21,43 @@ MDXQ/
 │   ├── test.csv
 │   └── データ説明.txt
 ├── notebooks/                     # Jupyter Notebook
-│   ├── 20250909_Exercises3_Challenge_rf100.ipynb
-│   ├── 20250909_Exercises3_Challenge_template.ipynb
+│   ├── 20250909_Exercises3_Challenge_rf100_0909-125700.ipynb
+│   ├── 20250909_Exercises3_Challenge_template_0909-125700.ipynb
 │   ├── score_analysis.py          # スコア記録・分析ライブラリ
 │   └── theme1_sample_code.ipynb
 ├── submissions/                   # 提出ファイル
-│   └── 20250909_Exercises3_Challenge_rf100_20250909-122900.csv
+│   └── 20250909_Exercises3_Challenge_rf100_0909-122900.csv
 ├── .gitignore
 └── README.md
 ```
+
+## ファイル命名規則
+
+### **基本形式**
+```
+[YYYYMMDD]_Exercises3_Challenge_[改善内容]_[MMdd-HHmmss].ipynb
+[YYYYMMDD]_Exercises3_Challenge_[改善内容]_[MMdd-HHmmss].csv
+```
+
+### **具体例**
+```
+# Notebook
+20250909_Exercises3_Challenge_rf100_0909-125700.ipynb
+20250909_Exercises3_Challenge_rf200_0909-130000.ipynb
+20250909_Exercises3_Challenge_xgb_0909-130500.ipynb
+
+# 提出ファイル
+20250909_Exercises3_Challenge_rf100_0909-122900.csv
+20250909_Exercises3_Challenge_rf200_0909-130100.csv
+20250909_Exercises3_Challenge_xgb_0909-130600.csv
+```
+
+### **命名規則の説明**
+- **YYYYMMDD**: 作成日（2025年9月9日）
+- **Exercises3**: 課題名
+- **Challenge**: チャレンジ名
+- **[改善内容]**: 実施した改善（rf100, rf200, xgb, features等）
+- **[MMdd-HHmmss]**: 作成時刻（月日-時分秒）
 
 ## 使用方法
 
@@ -49,12 +77,12 @@ jupyter notebook
 
 ```bash
 # 1. テンプレートから新しいNotebookを作成
-cp 20250909_Exercises3_Challenge_template.ipynb 20250909_Exercises3_Challenge_[改善内容].ipynb
+cp 20250909_Exercises3_Challenge_template_0909-125700.ipynb 20250909_Exercises3_Challenge_[改善内容]_[MMdd-HHmmss].ipynb
 
 # 例:
-cp 20250909_Exercises3_Challenge_template.ipynb 20250909_Exercises3_Challenge_rf200.ipynb
-cp 20250909_Exercises3_Challenge_template.ipynb 20250909_Exercises3_Challenge_xgb.ipynb
-cp 20250909_Exercises3_Challenge_template.ipynb 20250909_Exercises3_Challenge_features.ipynb
+cp 20250909_Exercises3_Challenge_template_0909-125700.ipynb 20250909_Exercises3_Challenge_rf200_0909-130000.ipynb
+cp 20250909_Exercises3_Challenge_template_0909-125700.ipynb 20250909_Exercises3_Challenge_xgb_0909-130500.ipynb
+cp 20250909_Exercises3_Challenge_template_0909-125700.ipynb 20250909_Exercises3_Challenge_features_0909-131000.ipynb
 
 # 2. Notebookを編集
 # - improvement_name を適切な値に変更
@@ -63,8 +91,8 @@ cp 20250909_Exercises3_Challenge_template.ipynb 20250909_Exercises3_Challenge_fe
 # 3. 実行して提出ファイルを生成
 
 # 4. 結果をコミット
-git add notebooks/20250909_Exercises3_Challenge_[改善内容].ipynb
-git add submissions/20250909_Exercises3_Challenge_[改善内容]_*.csv
+git add notebooks/20250909_Exercises3_Challenge_[改善内容]_[MMdd-HHmmss].ipynb
+git add submissions/20250909_Exercises3_Challenge_[改善内容]_[MMdd-HHmmss].csv
 git commit -m "改善: [改善内容] - スコア: [スコア値]"
 ```
 
@@ -86,7 +114,7 @@ result = record_score(
 
 | ファイル名 | モデル | スコア | 改善率 | 施策 |
 |------------|--------|--------|--------|------|
-| 20250909_Exercises3_Challenge_rf100.ipynb | RandomForestRegressor (100) | [提出後記録] | [計算中] | 線形回帰からRandomForestに変更 |
+| 20250909_Exercises3_Challenge_rf100_0909-125700.ipynb | RandomForestRegressor (100) | [提出後記録] | [計算中] | 線形回帰からRandomForestに変更 |
 
 ## 今後の改善案
 
