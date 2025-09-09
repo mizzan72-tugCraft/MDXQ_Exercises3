@@ -46,5 +46,29 @@
         "improvement_rate": -0.2032310952835633,
         "baseline_improvement": 0.9149454480747954,
         "baseline_improvement_rate": 22.909390574539113
+    },
+    {
+        "timestamp": "20250909-143814",
+        "current_score": 3.644648498790873,
+        "model_name": "RandomForestRegressor (n_estimators=100)",
+        "features_used": "店舗ID, 商品ID, 年, 月, 商品カテゴリID",
+        "notes": "線形回帰からRandomForestに変更",
+        "previous_score": 3.078811806610283,
+        "improvement": -0.5658366921805902,
+        "improvement_rate": -18.378411144381257,
+        "baseline_improvement": 0.3491087558942052,
+        "baseline_improvement_rate": 8.741361420618782
+    },
+    {
+        "timestamp": "20250909-144923",
+        "current_score": 3.644648498790873,
+        "model_name": "RandomForestRegressor (n_estimators=100)",
+        "features_used": "店舗ID, 商品ID, 年, 月, 商品カテゴリID",
+        "notes": "線形回帰からRandomForestに変更",
+        "previous_score": 3.644648498790873,
+        "improvement": 0.0,
+        "improvement_rate": 0.0,
+        "baseline_improvement": 0.3491087558942052,
+        "baseline_improvement_rate": 8.741361420618782
     }
 ]
